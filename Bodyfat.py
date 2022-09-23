@@ -1,16 +1,9 @@
 from dash import Dash, dcc, html, Input, Output, State
 import dash_bootstrap_components as dbc
-from dash.dependencies import Input, Output
 import pandas as pd
-import numpy as np
-from sklearn.tree import DecisionTreeClassifier
 from dash_bootstrap_components._components.Container import Container
-import pokebase as pb
-from sklearn import metrics
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-import plotly.express as px
-import plotly.graph_objects as go
 
  
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP, '/assert/style.css'])
